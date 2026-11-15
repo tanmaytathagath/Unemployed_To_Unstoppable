@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bpr1bxxm7gqqw"
+path="res://.godot/imported/grek.dialogue-216ee5d58750e5a8c9b6f97fb2b5e62c.tres"
+
+[deps]
+
+source_file="res://grek.dialogue"
+dest_files=["res://.godot/imported/grek.dialogue-216ee5d58750e5a8c9b6f97fb2b5e62c.tres"]
+
+[params]
+
+defaults=true

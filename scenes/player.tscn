@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dfi216r52xpq5"]
+
+[ext_resource type="Texture2D" uid="uid://dagt5a6jvt3u1" path="res://assests/images/player/hensen.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://bbf545pn86ndx" path="res://scripts/player.gd" id="1_g2els"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_theap"]
+size = Vector2(24, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbk5w"]
+size = Vector2(24, 36)
+
+[node name="player" type="CharacterBody2D" unique_id=1053336564]
+script = ExtResource("1_g2els")
+
+[node name="jensen" type="Sprite2D" parent="." unique_id=527061602]
+position = Vector2(1.9999999, 3.125)
+scale = Vector2(0.35294116, 0.33726415)
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=507692539]
+position = Vector2(2, 3)
+shape = SubResource("RectangleShape2D_theap")
+
+[node name="Pickup Area" type="Area2D" parent="." unique_id=74292663]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickup Area" unique_id=1108328136]
+position = Vector2(2, 3)
+shape = SubResource("RectangleShape2D_bbk5w")
+
+[connection signal="area_entered" from="Pickup Area" to="." method="_on_pickup_area_area_entered"]

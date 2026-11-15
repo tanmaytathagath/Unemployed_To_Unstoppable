@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://1cuo75je1ock"]
+
+[ext_resource type="Texture2D" uid="uid://c7870e1ks08nj" path="res://assests/images/ninja1/converted_image_sprite (3).png" id="1_6e84v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_theap"]
+radius = 20.22375
+
+[node name="Node2D" type="Node2D" unique_id=2107320798]
+
+[node name="chip" type="Area2D" parent="." unique_id=504754739]
+
+[node name="Sprite2D" type="Sprite2D" parent="chip" unique_id=76267387]
+position = Vector2(274.5, 136.75)
+scale = Vector2(0.27343747, 0.30808082)
+texture = ExtResource("1_6e84v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chip" unique_id=355723255 groups=["chip"]]
+position = Vector2(273, 137)
+shape = SubResource("CircleShape2D_theap")
